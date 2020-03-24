@@ -9,7 +9,7 @@ class Utility(object):
 
 	@staticmethod
 	def typeToBytes(t):
-		if (t in ["uint8", "int8", "byte", "char"]):
+		if (t in ["bool", "uint8", "int8", "byte", "char"]):
 			return 1
 		elif (t in ["float16", "half", "int16", "short"]):
 			return 2 
@@ -21,7 +21,7 @@ class Utility(object):
 
 	@staticmethod
 	def typeToString(t):
-		if (t in ["uint8", "byte", "char"]):
+		if (t in ["bool", "uint8", "byte", "char"]):
 			return "uint8"
 		elif (t in ["int8",]):
 			return "int8"
